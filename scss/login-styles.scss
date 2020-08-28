@@ -1,0 +1,162 @@
+@import "_mobile-styles.scss";
+@import "_shared-styles.scss";
+
+$containerMarginTop: 30%;
+$containerMarginLeft: 30%;
+
+.InvalidAlert {
+    position: absolute;
+    width: 760px;
+    padding: 20px;
+    background-color: #ff0000;
+    color: white;
+    display: none; /* <---- https://stackoverflow.com/questions/12397199/jquery-prevent-div-from-showing-during-page-load */
+}
+
+.ValidAlert {
+    position: absolute;
+    width: 760px;
+    padding: 20px;
+    background-color: #66cc00;
+    color: white;
+    display: none; /* <---- https://stackoverflow.com/questions/12397199/jquery-prevent-div-from-showing-during-page-load */
+}
+
+.CloseButton {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+    position: relative;
+}
+
+.CloseButton:hover {
+    color: black;
+}
+
+body {
+    //background-color: #333;
+    margin: 0;
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+.container {
+    background-color: #006699;
+    padding: 3rem;
+    border-radius: 1rem;
+    border: 2px solid black;
+    display: flex;
+    position: fixed;
+    top: 15%;
+    left: 25%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    .parentScanner {
+        background-color: ivory;
+        width: 300px;
+        height: 120px;
+        //top: 50%;
+        left: -20%;
+        margin-top: $containerMarginTop;
+        margin-left: $containerMarginLeft;
+        border: 3px solid black;
+        position: relative;
+        
+        .scanner {
+            display: block;
+            border: 2px solid black;
+            padding: 6px 10px;
+            position: absolute;
+            bottom: 20%;
+            left: 15%;
+            margin-top: $containerMarginTop - 25%;
+            margin-left: $containerMarginLeft - 25%;
+            width: 50%;
+            height: 10%;
+        }
+        
+        .username {
+            display: block;
+            border: 2px solid black;
+            padding: 6px 10px;
+            position: absolute;
+            top: 10%;
+            left: 15%;
+            margin-top: $containerMarginTop - 25%;
+            margin-left: $containerMarginLeft - 25%;
+            width: 50%;
+            height: 10%;
+        }
+    }
+
+}
+
+.form {
+    display: grid;
+    grid-template-columns: auto auto;
+    row-gap: 1rem;
+    column-gap: 3rem;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.title {
+    margin: 0;
+    text-align: center;
+
+}
+
+label {
+    font-weight: bold;
+}
+
+.container-amount-container {
+    display: flex;
+    align-items: center;
+}
+
+.number-input {
+    width: 2rem;
+}
+
+.password-display {
+    background-color: white;
+    color: black;
+    padding: 1rem;
+    border: 1px solid #333;
+    height: 2rem;
+    width: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    word-break: break-all;
+    border-radius: .5rem;
+}
+
+.btn {
+    grid-column: span 2;
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    padding: .5rem 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 1rem;
+}
+
+.btn:hover {
+    background-color: #FFFFFF33;
+}

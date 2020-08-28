@@ -1,0 +1,100 @@
+@import '_mobile-styles.scss';
+@import '_shared-styles.scss';
+
+p {
+    color: white;
+}
+
+.methodsPanel {
+
+    .expandingBox {
+        background:#1c152b;
+        height:100px;
+        width:100px;
+        margin:6px;
+        text-align: center;
+        text-anchor: middle;
+    }
+}
+
+.methodsPanel {
+
+    %sharedPanelTraits {
+        background-image: url("..\\images\\transparent-panel.png");
+        border: 2px solid black;
+
+    }
+
+    div {
+        height: 200px;
+        background-size: cover;
+        position: relative;
+        margin: 40px 0 0 0;
+        border-radius: 12px;
+    }
+
+    .panel1 {
+        @extend %sharedPanelTraits;
+        #phase1 {
+            color: red;
+        }
+        #method1 {
+            color: red;
+            float: right;
+        }
+    }
+    .panel2 {
+        @extend %sharedPanelTraits;
+        #phase2 {
+            color: yellow;
+        }
+        #method2 {
+            color: yellow;
+            float: right;
+        }
+    }
+    .panel3 {
+        @extend %sharedPanelTraits;
+        #phase3 {
+            color: lawngreen;
+        }
+        #method3 {
+            color: lawngreen;
+            float: right;
+        }
+    }
+
+
+    p {
+        color: rgb(0, 162, 255);
+        background: rgb(0, 0, 0);
+        background: linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+        background: -webkit-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+        background: -moz-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+        padding: 10px;
+        line-height: 28px;
+        text-align: justify;
+        position: absolute;
+        bottom: 0;
+        margin: 0;
+        height: 30px;
+        transition: height .5s;
+        -webkit-transition: height .5s;
+        -moz-transition: height .5s;
+    }
+
+    small {
+        opacity: 0;
+        color: rgba(255,255,255,1);
+    }
+
+    .show-description {
+        p {
+            height: 150px;
+        }
+
+        small {
+            opacity: 1;
+        }
+    }
+}

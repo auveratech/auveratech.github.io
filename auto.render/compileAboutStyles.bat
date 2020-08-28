@@ -1,0 +1,1 @@
+sass C:\Users\knoxb\Desktop\github-page\knoxba.github.io\scss\about-styles.scss C:\Users\knoxb\Desktop\github-page\knoxba.github.io\build\current-build-about.css

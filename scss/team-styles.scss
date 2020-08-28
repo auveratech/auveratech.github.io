@@ -1,0 +1,63 @@
+@import '_mobile-styles.scss';
+@import '_shared-styles.scss';
+
+.parentPanels {
+
+    %openPosition {
+        background-image: url("..\\images\\unnamed.png");
+    }
+
+    div {
+        height: 600px;
+        width: 500px;
+        background-size: cover;
+        position: relative;
+        margin: 40px 0 0 0;
+        border-radius: 12px;
+        margin: 2% auto;
+    }
+
+    .panel1 {
+        background-image: url("..\\images\\avowner.jpg");
+    }
+
+    .panel2, .panel3 {
+        @extend %openPosition;
+    }
+
+    .price {
+        float: right;
+    }
+
+    p {
+        color: rgba(255,255,255,1);
+        background: black;
+        background: linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+        background: -webkit-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+        background: -moz-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+        padding: 10px;
+        line-height: 28px;
+        text-align: justify;
+        position: absolute;
+        bottom: 0;
+        margin: 0;
+        height: 30px;
+        transition: height .5s;
+        -webkit-transition: height .5s;
+        -moz-transition: height .5s;
+    }
+
+    small {
+        opacity: 0;
+    }
+
+    .show-description {
+        p {
+            height: 150px;
+        }
+
+        small {
+            opacity: 1;
+        }
+    }
+}
