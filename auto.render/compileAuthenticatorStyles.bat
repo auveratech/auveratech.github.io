@@ -1,1 +1,0 @@
-sass C:\Users\knoxb\Desktop\github-page\knoxba.github.io\scss\authenticator-styles.scss C:\Users\knoxb\Desktop\github-page\knoxba.github.io\build\current-build-authenticator.css

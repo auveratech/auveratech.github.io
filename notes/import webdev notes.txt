@@ -1,0 +1,38 @@
+angular (ng)
+node.js (npm)
+
+download postman
+npm install -g sass
+npm install ... create-react-app
+npm install jquery
+
+
+git init
+"creates a .git folder in the project folder you specify"
+
+git add <file> or <.> for all
+"creates a staging area for the file or files you specify"
+
+git status
+
+
+git commit
+"Takes everything from the staging area and brings it to the local repository"
+
+
+
+git push
+"pushes local repository to remote repository"
+
+git pull
+"Pull the latest changes from the remote repository"
+
+git clone
+"Copy a remote repository to a local folder"
+
+https://stackoverflow.com/questions/24114676/git-error-failed-to-push-some-refs-to-remote
+
+Parallax scrolling:
+
+https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_parallax
+https://www.w3schools.com/howto/howto_css_pricing_table.asp

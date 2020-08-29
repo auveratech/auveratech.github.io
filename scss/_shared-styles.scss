@@ -1,124 +1,16 @@
 @import "_animation-styles.scss";
 
-/* Navigation Bar */
-nav {
-	overflow: hidden;
-	position: fixed; 
-	top: 0;
-	left: 0;
-	width: 100%;
-	z-index: 5;
 
-	
-	ul {
-		list-style-type: none;
-		margin: 0;
-		padding: 0;
-		overflow: hidden;
-		background-color: #333;
-	}
+/* Navigation Bar 
+Contains:
 
-	li {
-		float: left;
-	}
+navigation bar and subnavigation bar layouts
+hover animation and colors
+text properties
 
-	a {
-		display: block;
-		color: white;
-		text-align: center;
-		padding: 14px 16px;
-		text-decoration: none;
-	}
-
-	a:hover {
-		background-color: #111;
-	}
-
-	#companyNameSmall {
-		display: block;
-		color: white;
-		text-align: center;
-		padding: 14px 16px;
-		text-decoration: none;
-		float: right;
-	}
-
-	.linear-effect {
-		text-align: center;
-		background: linear-gradient(90deg, #333 30%, #ffffff 40%, #ffffff 60%, #333 80%);
-		background-size: 200% auto;
-		color: #333;
-		background-clip: text;
-		text-fill-color: transparent;
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-		animation: shine 5s linear infinite;
-
-		@keyframes shine {
-			to {
-				background-position: 200% center;
-			}
-		}
-	}
-	/*.companyNameSmall {
-		span {
-			opacity: 0;
-			color: white;
-			transition: all 3s ease;
-		}
-
-		span.fade {
-			opacity: 1;
-			color: orange;
-		}
-	}*/
-} 
-
-
-/* Sidenavigation Bar */
-/* .parentSidenav {
-	.sidenav {
-		height: 400%;
-		width: 160px;
-		position: fixed;
-		z-index: 1;
-		top: 5%;
-		left: 0;
-		background-color: black;
-		overflow-x: hidden;
-		padding-top: 0px;
-		opacity: 0.5;
-	}
-
-	%sidenavTextStyle {
-		padding: 6px 8px 6px 16px;
-		text-decoration: none;
-		color: #818181;
-		display: block;
-	}
-
-	.sidenav {
-		a {
-			@extend %sidenavTextStyle;
-		}
-
-		p {
-			@extend %sidenavTextStyle;
-			color: white;
-		}
-
-		a:hover {
-			color: #ffff00;
-		}
-	}
-} */
-
-/* body {
-	font-family: Arial, Helvetica, sans-serif;
-	margin: 0;
-  } */
-  
-  .navbar {
+*/
+// |____________________________________________________|
+.navbar {
 	overflow: hidden;
 	background-color: #333;
 
@@ -129,63 +21,70 @@ nav {
 		text-align: center;
 		padding: 14px 16px;
 		text-decoration: none;
-	  }
-	  a:hover {
-		  //background-color: rgb(0, 32, 139);
-		  background-color: rgba(0, 32, 139, 0.479);
-	  }
-  }
-  
-  .subnav {
-	float: left;
-	overflow: hidden;
-  }
-  
-  .subnav .subnavbtn {
-	font-size: 16px;  
-	border: none;
-	outline: none;
-	color: white;
-	padding: 14px 16px;
-	background-color: inherit;
-	font-family: inherit;
-	margin: 0;
-  }
-  
-  .subnav:hover .subnavbtn {
-	//background-color: rgb(0, 32, 139);
-	background-color: rgba(0, 32, 139, 0.479);
-  }
-  
-  .subnav-content {
-	display: none;
-	position: absolute;
-	left: 0;
-	//background-color: rgb(0, 32, 139);
-	background-color: rgba(0, 32, 139, 0.479);
-	width: 100%;
-	z-index: 1;
-
-	a {
-		float: left;
-		color: white;
-		text-decoration: none;
-	  }
+	}	
 	
 	a:hover {
-		background-color: #eee;
-		color: black;
-	  }
-  }
-  
-  .subnav:hover .subnav-content {
-	display: block;
-  }
+		//background-color: rgb(0, 32, 139);
+		background-color: rgba(0, 32, 139, 0.479);
+	}
+	.subnav {
+		float: left;
+		overflow: hidden;
+	}
+	
+	.subnav .subnavbtn {
+		font-size: 16px;  
+		border: none;
+		outline: none;
+		color: white;
+		padding: 14px 16px;
+		background-color: inherit;
+		font-family: inherit;
+		margin: 0;
+	}
+	
+	.subnav:hover .subnavbtn {
+		//background-color: rgb(0, 32, 139);
+		background-color: rgba(0, 32, 139, 0.479);
+	}
+	
+	.subnav-content {
+		display: none;
+		position: absolute;
+		left: 0;
+		//background-color: rgb(0, 32, 139);
+		background-color: rgba(0, 32, 139, 0.479);
+		width: 100%;
+		z-index: 1;
+	
+		a {
+			float: left;
+			color: white;
+			text-decoration: none;
+		}
+	
+		a:hover {
+			background-color: #eee;
+			color: black;
+		}
+	}
+	
+	.subnav:hover .subnav-content {
+		display: block;
+	}
+}
 
 
 
+/* Background 
+Contains: 
 
-/* Background */
+font-family declaration
+background gradient animation & size
+
+
+*/
+// |____________________________________________________|
 body {
 	font-family: helvetica, sans-serif;
 	margin: 0 auto;
@@ -214,7 +113,6 @@ body {
 	display: inline-block;
 
 }
-
 #subHeader {
 	//color: slategray;
 	text-align: justify;
@@ -258,45 +156,6 @@ body {
 	border: 2px solid black;
 
 }
-
-
-/* .parentLogo {
-	%sharedLogoTraits {
-		background-image: url("..\\images\\Logo\\standard\\grayscale-transparent.png");
-		height: 400px;
-		background-size: cover;
-		margin: 40px 0 0 0;
-		border-radius: 12px;
-		position: relative;
-		
-	}
-
-	.mainLogo {
-		@extend %sharedLogoTraits;
-		z-index: -1;
-		opacity: 0.1;
-		top: -150px;
-		left: -300px;
-		
-	}
-
-	.contactLogo {
-		@extend %sharedLogoTraits;
-		z-index: 5;
-		opacity: 0.2;
-		top: -1500px;
-		left: -340px;
-	}
-
-	.teamLogo {
-		@extend %sharedLogoTraits;
-		z-index: 10;
-		opacity: 0.1;
-		top: -150px;
-		left: -300px;
-		
-	}
-} */
 
 .parentFooter {
 	.footer {

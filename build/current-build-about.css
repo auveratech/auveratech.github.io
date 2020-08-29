@@ -67,113 +67,14 @@
     background-position: 0% 50%;
   }
 }
-/* Navigation Bar */
-nav {
-  overflow: hidden;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 5;
-  /*.companyNameSmall {
-  	span {
-  		opacity: 0;
-  		color: white;
-  		transition: all 3s ease;
-  	}
+/* Navigation Bar 
+Contains:
 
-  	span.fade {
-  		opacity: 1;
-  		color: orange;
-  	}
-  }*/
-}
-nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
-}
-nav li {
-  float: left;
-}
-nav a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-nav a:hover {
-  background-color: #111;
-}
-nav #companyNameSmall {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  float: right;
-}
-nav .linear-effect {
-  text-align: center;
-  background: linear-gradient(90deg, #333 30%, #ffffff 40%, #ffffff 60%, #333 80%);
-  background-size: 200% auto;
-  color: #333;
-  background-clip: text;
-  text-fill-color: transparent;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: shine 5s linear infinite;
-}
-@keyframes shine {
-  to {
-    background-position: 200% center;
-  }
-}
+navigation bar and subnavigation bar layouts
+hover animation and colors
+text properties
 
-/* Sidenavigation Bar */
-/* .parentSidenav {
-	.sidenav {
-		height: 400%;
-		width: 160px;
-		position: fixed;
-		z-index: 1;
-		top: 5%;
-		left: 0;
-		background-color: black;
-		overflow-x: hidden;
-		padding-top: 0px;
-		opacity: 0.5;
-	}
-
-	%sidenavTextStyle {
-		padding: 6px 8px 6px 16px;
-		text-decoration: none;
-		color: #818181;
-		display: block;
-	}
-
-	.sidenav {
-		a {
-			@extend %sidenavTextStyle;
-		}
-
-		p {
-			@extend %sidenavTextStyle;
-			color: white;
-		}
-
-		a:hover {
-			color: #ffff00;
-		}
-	}
-} */
-/* body {
-	font-family: Arial, Helvetica, sans-serif;
-	margin: 0;
-  } */
+*/
 .navbar {
   overflow: hidden;
   background-color: #333;
@@ -189,13 +90,11 @@ nav .linear-effect {
 .navbar a:hover {
   background-color: rgba(0, 32, 139, 0.479);
 }
-
-.subnav {
+.navbar .subnav {
   float: left;
   overflow: hidden;
 }
-
-.subnav .subnavbtn {
+.navbar .subnav .subnavbtn {
   font-size: 16px;
   border: none;
   outline: none;
@@ -205,12 +104,10 @@ nav .linear-effect {
   font-family: inherit;
   margin: 0;
 }
-
-.subnav:hover .subnavbtn {
+.navbar .subnav:hover .subnavbtn {
   background-color: rgba(0, 32, 139, 0.479);
 }
-
-.subnav-content {
+.navbar .subnav-content {
   display: none;
   position: absolute;
   left: 0;
@@ -218,21 +115,27 @@ nav .linear-effect {
   width: 100%;
   z-index: 1;
 }
-.subnav-content a {
+.navbar .subnav-content a {
   float: left;
   color: white;
   text-decoration: none;
 }
-.subnav-content a:hover {
+.navbar .subnav-content a:hover {
   background-color: #eee;
   color: black;
 }
-
-.subnav:hover .subnav-content {
+.navbar .subnav:hover .subnav-content {
   display: block;
 }
 
-/* Background */
+/* Background 
+Contains: 
+
+font-family declaration
+background gradient animation & size
+
+
+*/
 body {
   font-family: helvetica, sans-serif;
   margin: 0 auto;
@@ -294,43 +197,6 @@ body {
   border: 2px solid black;
 }
 
-/* .parentLogo {
-	%sharedLogoTraits {
-		background-image: url("..\\images\\Logo\\standard\\grayscale-transparent.png");
-		height: 400px;
-		background-size: cover;
-		margin: 40px 0 0 0;
-		border-radius: 12px;
-		position: relative;
-
-	}
-
-	.mainLogo {
-		@extend %sharedLogoTraits;
-		z-index: -1;
-		opacity: 0.1;
-		top: -150px;
-		left: -300px;
-
-	}
-
-	.contactLogo {
-		@extend %sharedLogoTraits;
-		z-index: 5;
-		opacity: 0.2;
-		top: -1500px;
-		left: -340px;
-	}
-
-	.teamLogo {
-		@extend %sharedLogoTraits;
-		z-index: 10;
-		opacity: 0.1;
-		top: -150px;
-		left: -300px;
-
-	}
-} */
 .parentFooter .footer {
   position: fixed;
   bottom: 0px;
@@ -349,15 +215,6 @@ body {
 
 p {
   color: white;
-}
-
-.methodsPanel .expandingBox {
-  background: #1c152b;
-  height: 100px;
-  width: 100px;
-  margin: 6px;
-  text-align: center;
-  text-anchor: middle;
 }
 
 .methodsPanel .panel3, .methodsPanel .panel2, .methodsPanel .panel1 {
