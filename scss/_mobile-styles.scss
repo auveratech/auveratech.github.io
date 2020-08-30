@@ -25,3 +25,20 @@ $md-breakpoint: 200px;
         font-size: 16px;
     }
 }
+@media screen and (min-width: 980px) /* Desktop */ {
+    body {
+      font-size: 20px;
+    }
+  }
+  
+  @media screen  and (max-width: 979px) /* Tablet */ {
+    body {
+        font-size: 20px;
+    }
+  }
+  
+  @media screen and (max-width: 500px) /* Mobile */ {
+    body {
+        font-size: 20px;
+    }
+  }

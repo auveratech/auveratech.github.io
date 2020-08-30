@@ -115,7 +115,7 @@ body {
   font-family: helvetica, sans-serif;
   margin: 0 auto;
   background: linear-gradient(267deg, #374e4c, #1c152b);
-  background-size: 400% 400%;
+  background-size: cover;
   -webkit-animation: backgroundAnimation 16s ease infinite;
   -moz-animation: backgroundAnimation 16s ease infinite;
   -o-animation: backgroundAnimation 16s ease infinite;
