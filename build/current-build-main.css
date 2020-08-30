@@ -126,10 +126,8 @@ body {
   text-align: justify;
   padding: 10px;
   font-size: 72px;
-  position: relative;
-  left: 25%;
+  margin: 5% auto;
   font-family: "Righteous", cursive;
-  margin: 2% auto;
   display: inline-block;
 }
 
@@ -165,6 +163,7 @@ body {
   opacity: 1;
   background-size: cover;
   width: 100%;
+  max-height: 600px;
   position: absolute;
   top: 0;
   left: 0;
@@ -172,29 +171,130 @@ body {
   border: 2px solid black;
 }
 
-.parentFooter .footer {
-  position: fixed;
-  bottom: 0px;
-  left: 0px;
-  height: 80px;
-  width: 100%;
-  background-color: black;
-  overflow-x: hidden;
-  padding-top: 0px;
-  opacity: 0.5;
-  color: white;
-}
-.parentFooter h2 {
-  text-align: center;
+.plxFooterPanel {
+  background-image: url("..\\images\\transparent-panel3.png");
+  border: 4px solid black;
+  box-shadow: 5px 10px 18px #888888;
+  height: 200px;
+  margin: 0 auto;
+  margin-top: 5%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 5;
+  /* .footer {
+  	position: fixed;
+  	bottom: 0px;
+  	left: 0px;
+  	height: 80px;
+  	width: 100%;
+  	background-color: black;
+  	overflow-x: hidden;
+  	padding-top: 0px;
+  	opacity: 0.5;
+  	color: white;
+  }
+
+  h2 {
+  	text-align: center; 
+  } */
 }
 
 p {
   color: white;
 }
 
-/*
-#panel1 {
+.plxPanel1 {
+  background-image: url("..\\images\\803.jpg");
+  border: 4px solid black;
+  box-shadow: 5px 10px 18px #888888;
+  height: 500px;
+  width: 60%;
+  margin: 0 auto;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 5;
+}
 
-}*/
+.plxPanel2 {
+  background-image: url("..\\images\\1250.png");
+  border: 4px solid black;
+  box-shadow: 5px 10px 18px #888888;
+  height: 500px;
+  width: 60%;
+  position: relative;
+  margin: 2% 5%;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 5;
+}
+
+.plxPanel3 {
+  background-image: url("..\\images\\sample-services.png");
+  border: 4px solid black;
+  box-shadow: 5px 10px 18px #888888;
+  height: 500px;
+  width: 100%;
+  position: relative;
+  margin: 2% 2%;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 5;
+}
+
+/*
+.plxPanel2 {
+
+        background-image: url("..\\images\\1362.jpg");
+        border: 4px solid black;
+        box-shadow: 5px 10px 18px #888888;
+        //opacity: 0.5;
+
+        // set dimensions
+        height: 1810px;
+        width: 50%;
+        margin: 0 auto;
+
+        // Create the parallax scrolling effect
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: 5;
+
+        .plxPanel2 {
+
+            background-image: url("..\\images\\1362.jpg");
+            border: 4px solid black;
+            box-shadow: 5px 10px 18px #888888;
+            //opacity: 0.5;
+
+            // set dimensions
+            height: 1810px;
+            width: 50%;
+            margin: 0 auto;
+
+            // Create the parallax scrolling effect
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            z-index: 5;
+        }
+
+
+    }
+
+    */
 
 /*# sourceMappingURL=current-build-main.css.map */

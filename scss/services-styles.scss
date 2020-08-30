@@ -5,7 +5,7 @@ p {
     color: #aaaaaa;
 }
 
-.parentPanel {
+.plxPanel1 {
     
     %sharedPanelTraits {
         background-image: url("..\\images\\transparent-panel.png");
@@ -13,56 +13,80 @@ p {
 
     }
 
-    div {
-        height: 200px;
+   
+
+    .plxPanel2 {
+        /* The image used */
+        background-image: url("..\\images\\1362.jpg");
+        border: 4px solid black;
+        box-shadow: 5px 10px 18px #888888;
+        //opacity: 0.5;
+            
+        // set dimensions
+        height: 1810px;
+        width: 50%;
+        margin: 0 auto;
+    
+        /* Create the parallax scrolling effect */
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
         background-size: cover;
-        position: relative;
-        margin-top: 10%;
-        border-radius: 12px;
-        max-width: 800px;
-        margin: 2% auto;
-    }
+        z-index: 5;
 
-    .panel1, .panel2,
-    .panel3, .panel4, 
-    .panel5, .panel6,
-    .panel7, .panel8 {
-        @extend %sharedPanelTraits;
-    }
-
-    .price {
-        float: right;
-    }
-
-    p {
-        color: rgba(255,255,255,1);
-        background: black;
-        background: linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
-        background: -webkit-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
-        background: -moz-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
-        padding: 10px;
-        line-height: 28px;
-        text-align: justify;
-        position: absolute;
-        bottom: 0;
-        margin: 0;
-        height: 30px;
-        transition: height .5s;
-        -webkit-transition: height .5s;
-        -moz-transition: height .5s;
-    }
-
-    small {
-        opacity: 0;
-    }
-
-    .show-description {
+        div {
+            height: 200px;
+            background-size: cover;
+            position: relative;
+            margin-top: 10%;
+            border-radius: 12px;
+            max-width: 800px;
+            margin: 2% auto;
+        }
+    
+        .panel1, .panel2,
+        .panel3, .panel4, 
+        .panel5, .panel6,
+        .panel7, .panel8 {
+            @extend %sharedPanelTraits;
+        }
+    
+        .price {
+            float: right;
+        }
+    
         p {
-            height: 150px;
+            color: rgba(255,255,255,1);
+            background: black;
+            background: linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+            background: -webkit-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+            background: -moz-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+            padding: 10px;
+            line-height: 28px;
+            text-align: justify;
+            position: absolute;
+            bottom: 0;
+            margin: 0;
+            height: 30px;
+            transition: height .5s;
+            -webkit-transition: height .5s;
+            -moz-transition: height .5s;
         }
-
+    
         small {
-            opacity: 1;
+            opacity: 0;
+        }
+    
+        .show-description {
+            p {
+                height: 150px;
+            }
+    
+            small {
+                opacity: 1;
+            }
         }
     }
+
+    
 }
