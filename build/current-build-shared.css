@@ -122,15 +122,6 @@ body {
   animation: backgroundAnimation 16s ease infinite;
 }
 
-#header {
-  text-align: justify;
-  padding: 10px;
-  font-size: 72px;
-  margin: 5% auto;
-  font-family: "Righteous", cursive;
-  display: inline-block;
-}
-
 #subHeader {
   text-align: justify;
   font-size: 32px;
