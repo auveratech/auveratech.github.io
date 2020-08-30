@@ -29,28 +29,58 @@
   #header {
     text-align: justify;
     padding: 10px;
-    font-size: 18px;
+    font-size: 72px;
     margin: 5% auto;
+    font-family: "Righteous", cursive;
+    display: inline-block;
+  }
+
+  #subheader {
+    color: lightblue;
+    text-align: left;
+    padding: 10px;
+    font-size: 40px;
+    margin: 2% auto;
     font-family: "Righteous", cursive;
     display: inline-block;
   }
 }
 @media screen and (max-width: 979px) {
   #header {
-    text-align: justify;
+    text-align: left;
     padding: 10px;
-    font-size: 24px;
+    font-size: 44px;
     margin: 5% auto;
+    font-family: "Righteous", cursive;
+    display: inline-block;
+  }
+
+  #subheader {
+    color: lightblue;
+    text-align: left;
+    padding: 10px;
+    font-size: 40px;
+    margin: 2% auto;
     font-family: "Righteous", cursive;
     display: inline-block;
   }
 }
 @media screen and (max-width: 500px) {
   #header {
-    text-align: justify;
+    text-align: left;
     padding: 10px;
     font-size: 24px;
     margin: 5% auto;
+    font-family: "Righteous", cursive;
+    display: inline-block;
+  }
+
+  #subheader {
+    color: lightblue;
+    text-align: left;
+    padding: 10px;
+    font-size: 20px;
+    margin: 2% auto;
     font-family: "Righteous", cursive;
     display: inline-block;
   }
@@ -177,17 +207,6 @@ body {
   -moz-animation: backgroundAnimation 16s ease infinite;
   -o-animation: backgroundAnimation 16s ease infinite;
   animation: backgroundAnimation 16s ease infinite;
-}
-
-#subHeader {
-  text-align: justify;
-  font-size: 32px;
-  color: white;
-  position: relative;
-  left: 35%;
-  top: 20%;
-  font-family: "Righteous", cursive;
-  margin: 2% auto;
 }
 
 .linear-effect {

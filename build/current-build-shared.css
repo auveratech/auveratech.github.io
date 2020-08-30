@@ -122,17 +122,6 @@ body {
   animation: backgroundAnimation 16s ease infinite;
 }
 
-#subHeader {
-  text-align: justify;
-  font-size: 32px;
-  color: white;
-  position: relative;
-  left: 35%;
-  top: 20%;
-  font-family: "Righteous", cursive;
-  margin: 2% auto;
-}
-
 .linear-effect {
   text-align: center;
   background: linear-gradient(-45deg, #a2a4fc 30%, #ffffff 59%, #ffffff 60%, #a2a4fc 80%);
