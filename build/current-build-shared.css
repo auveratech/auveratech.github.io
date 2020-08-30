@@ -125,6 +125,7 @@ body {
 .linear-effect {
   text-align: center;
   background: linear-gradient(-45deg, #a2a4fc 30%, #ffffff 59%, #ffffff 60%, #a2a4fc 80%);
+  background: linear-gradient(-45deg, #f3fca2 30%, #ffffff 59%, #ffffff 60%, #f3fca2 80%);
   background-size: 200% auto;
   color: #333;
   background-clip: text;
