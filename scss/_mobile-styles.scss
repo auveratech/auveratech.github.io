@@ -25,29 +25,108 @@
         font-size: 16px;
     }
 } */
+$globalVar: 50%;
 @media screen and (min-width: 980px) /* Desktop */ {
-    #Header {
+   
+    .panoramicHeader {
 
-        height: 200px;
-        background-size: cover;
-        position: relative;
-        margin-top: 10%;
-        border-radius: 12px;
-        max-width: 100%;
-        margin: 12% auto;
-        background-color: black;
-        opacity: 0.5;
+        #panorama {
 
-        h1 {
-            
-            text-align: center;
-            padding: 10px;
-            font-size: 64px;
-            //font-family: 'Righteous', cursive;
-            font-family: Arial, Helvetica, sans-serif;
+            height: 10%;
+            width: 100%;
+            background-size: cover;
+            position: relative;
+            //margin-top: 10%;
+            //border-radius: 12px;
+            //max-width: 800px;
+            margin: auto auto;
+            //width: 100%;
+            max-height: $globalVar;
+            z-index: -5;
+
+
         }
-        
     
+        #Header {
+
+            position: absolute;
+            top: $globalVar;
+            height: 200px;
+            width: 100%;
+            background-size: cover;
+            margin-top: 10%;
+            //border-radius: 12px;
+            max-width: 100%;
+            //margin: -13% auto;
+            margin: auto auto;
+            background-color: black;
+            opacity: 0.5;
+
+            h1 {
+                
+                text-align: center;
+                padding: 10px;
+                font-size: 64px;
+                //font-family: 'Righteous', cursive;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            
+        
+        }
+
+        .Contact {
+            z-index: 5;
+            margin: -5% auto;
+        
+            .center {
+                display: table;
+                width: 100%;
+                //height: 2%;
+                
+        
+                #social-test {
+                    display: table-cell;
+                    vertical-align: middle;
+                    text-align: center;
+                    font-size: 30px;
+            
+                    .social {
+                        padding-left: 0px;
+            
+                        &:hover > li {
+                            opacity: 0.5;
+                        }
+            
+                        &:hover > li:hover {
+                            opacity: 1;
+                        }
+                    }
+            
+                    li {
+                        color: rgba(167, 146, 129, 0.6);
+                        //color: black;
+                        list-style-type: none;
+                        display: inline-block;
+                        width: 50px;
+                        height: 50px;
+                        line-height: 50px;
+                        padding: 1%;
+                        border: 1px solid rgba(167, 146, 129, 0.4);
+                        //border: 1px solid black;
+                        cursor: pointer;
+                        margin-left: 10px;
+                        margin-bottom: 20px;
+                        transition: ease .3s;
+            
+                        &:hover {
+                            color: rgba(167, 146, 129, 1);
+                            //color: black;
+                            border: 1px solid rgba(167, 146, 129, 1);
+                        }
+                    }
+                }
+            }
+        }
     }
     #Subheader {
 
@@ -68,30 +147,110 @@
             font-family: 'Righteous', cursive;
             display: inline-block;
         }
-
     }
-  }
+}
   
 @media screen  and (max-width: 979px) /* Tablet */ {
-    #Header {
 
-        height: 200px;
-        background-size: cover;
-        position: relative;
-        margin-top: 10%;
-        border-radius: 12px;
-        max-width: 1000px;
-        margin: 2% auto;
+    .panoramicHeader {
 
-        h1 {
-            
-            text-align: center;
-            padding: 10px;
-            font-size: 44px;
-            font-family: 'Righteous', cursive;
+        #panorama {
+
+            height: 10%;
+            width: 100%;
+            background-size: cover;
+            position: relative;
+            //margin-top: 10%;
+            //border-radius: 12px;
+            //max-width: 800px;
+            margin: auto auto;
+            //width: 100%;
+            max-height: $globalVar;
+            z-index: -5;
+
+
         }
-        
     
+        #Header {
+
+            position: absolute;
+            top: $globalVar;
+            height: 200px;
+            width: 100%;
+            background-size: cover;
+            margin-top: 10%;
+            //border-radius: 12px;
+            max-width: 100%;
+            //margin: -13% auto;
+            margin: auto auto;
+            background-color: black;
+            opacity: 0.5;
+
+            h1 {
+                
+                text-align: center;
+                padding: 10px;
+                font-size: 64px;
+                //font-family: 'Righteous', cursive;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            
+        
+        }
+
+        .Contact {
+            z-index: 5;
+            margin: -5% auto;
+        
+            .center {
+                display: table;
+                width: 100%;
+                //height: 2%;
+                
+        
+                #social-test {
+                    display: table-cell;
+                    vertical-align: middle;
+                    text-align: center;
+                    font-size: 30px;
+            
+                    .social {
+                        padding-left: 0px;
+            
+                        &:hover > li {
+                            opacity: 0.5;
+                        }
+            
+                        &:hover > li:hover {
+                            opacity: 1;
+                        }
+                    }
+            
+                    li {
+                        color: rgba(167, 146, 129, 0.6);
+                        //color: black;
+                        list-style-type: none;
+                        display: inline-block;
+                        width: 50px;
+                        height: 50px;
+                        line-height: 50px;
+                        padding: 1%;
+                        border: 1px solid rgba(167, 146, 129, 0.4);
+                        //border: 1px solid black;
+                        cursor: pointer;
+                        margin-left: 10px;
+                        margin-bottom: 20px;
+                        transition: ease .3s;
+            
+                        &:hover {
+                            color: rgba(167, 146, 129, 1);
+                            //color: black;
+                            border: 1px solid rgba(167, 146, 129, 1);
+                        }
+                    }
+                }
+            }
+        }
     }
     
     #Subheader {
@@ -114,31 +273,107 @@
             display: inline-block;
         }
 
-    }
-        
+    }    
 }
   
 
 @media screen and (max-width: 500px) /* Mobile */ {
-    #Header {
 
-        height: 200px;
-        background-size: cover;
-        position: relative;
-        margin-top: 10%;
-        border-radius: 12px;
-        max-width: 1000px;
-        margin: 2% auto;
+    .panoramicHeader {
 
-        h1 {
-            
-            text-align: center;
-            padding: 10px;
-            font-size: 24px;
-            font-family: 'Righteous', cursive;
+        #panorama {
+
+            height: 50%;
+            width: 100%;
+            background-size: cover;
+            position: relative;
+            margin: auto auto;
+            max-height: $globalVar;
+            z-index: -5;
+
+
         }
-        
     
+        #Header {
+
+            position: absolute;
+            top: 30%;
+            height: 50px;
+            width: 100%;
+            background-size: cover;
+            margin-top: 10%;
+            //border-radius: 12px;
+            max-width: 100%;
+            //margin: -13% auto;
+            margin: auto auto;
+            background-color: black;
+            opacity: 0.5;
+
+            h1 {
+                
+                text-align: center;
+                padding: 10px;
+                font-size: 16px;
+                //font-family: 'Righteous', cursive;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            
+        
+        }
+
+        .Contact {
+            z-index: 5;
+            margin: -5% auto;
+        
+            .center {
+                display: table;
+                width: 100%;
+                //height: 2%;
+                
+        
+                #social-test {
+                    display: table-cell;
+                    vertical-align: middle;
+                    text-align: center;
+                    font-size: 30px;
+            
+                    .social {
+                        padding-left: 0px;
+            
+                        &:hover > li {
+                            opacity: 0.5;
+                        }
+            
+                        &:hover > li:hover {
+                            opacity: 1;
+                        }
+                    }
+            
+                    li {
+                        color: rgba(167, 146, 129, 0.6);
+                        //color: black;
+                        list-style-type: none;
+                        display: inline-block;
+                        width: 50px;
+                        height: 50px;
+                        line-height: 50px;
+                        padding: 1%;
+                        border: 1px solid rgba(167, 146, 129, 0.4);
+                        //border: 1px solid black;
+                        cursor: pointer;
+                        margin-left: 10px;
+                        margin-bottom: 20px;
+                        transition: ease .3s;
+            
+                        &:hover {
+                            color: rgba(167, 146, 129, 1);
+                            //color: black;
+                            border: 1px solid rgba(167, 146, 129, 1);
+                        }
+                    }
+                }
+            }
+        }
     }
 
     #Subheader {
