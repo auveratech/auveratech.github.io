@@ -99,7 +99,25 @@ body {
 	}
 }
 
+.linear-effect2 {
+	text-align: center;
+	//background: linear-gradient(-45deg, rgb(162, 164, 252) 30%, #ffffff 59%, #ffffff 60%, rgb(162, 164, 252) 80%);
+	//background: linear-gradient(90deg, #ffffff86 30%, rgb(59, 105, 255) 40%, rgb(59, 105, 255) 50%, #ffffff 80% ,#ffffff86 90%);
+    background: linear-gradient(-45deg, rgb(248, 218, 152) 30%, #ffffff 59%, #ffffff 60%, rgb(248, 218, 152) 80%);
+    background-size: 200% auto;
+	color: #333;
+	background-clip: text;
+	text-fill-color: transparent;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	animation: shine 4s linear infinite;
 
+	@keyframes shine {
+		to {
+			background-position: 200% center;
+		}
+	}
+}
 
 .plxFooterPanel {
     background-image: url("..\\images\\transparent-panel3.png");

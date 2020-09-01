@@ -1,7 +1,7 @@
 @media screen and (min-width: 980px) /* Desktop */ {
     .Landing {
 
-        background-image: url("/images/partners1.jpg");
+        background-image: url("../images/partners.jpg");
         background-size: cover;
         border: 1px solid;
         //padding: 10px;
@@ -45,6 +45,16 @@
                 font-family: 'Audiowide', cursive;
     
             }
+        }
+    }
+    #listOfPartners {
+        h1 {
+            color: white;
+            text-align: center;
+            text-align: center;
+            padding: 10px;
+            font-size: 24px;
+            font-family: 'Audiowide', cursive;
         }
     }
 }
@@ -103,7 +113,6 @@
   
 
 @media screen and (max-width: 500px) /* Mobile */ {
-    
     
     .Landing {
 
