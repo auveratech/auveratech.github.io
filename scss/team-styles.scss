@@ -1,4 +1,4 @@
-@import '_mobile-styles.scss';
+@import '_team-mobile-styles.scss';
 @import '_shared-styles.scss';
 
 .parentPanels {
@@ -21,7 +21,11 @@
         background-image: url("..\\images\\avowner.jpg");
     }
 
-    .panel2, .panel3 {
+    .panel2 {
+        background-image: url("../images/asde1.png"); 
+    }
+    
+    .panel3 {
         @extend %openPosition;
     }
 

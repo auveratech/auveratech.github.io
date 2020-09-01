@@ -1,22 +1,222 @@
-/* Error: From line 167, column 13 of ..\scss\_mobile-styles.scss: 
- *     ╷
- * 167 │             @extend %sharedPanelTraits;
- *     │             ^^^^^^^^^^^^^^^^^^^^^^^^^^
- *     ╵
- * You may not @extend selectors across media queries.
- *    ,
- * 10 |     %sharedPanelTraits {
- *    |     ^^^^^^^^^^^^^^^^^^^
- *    '
- *   ..\scss\services-styles.scss 10:5  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: From line 167, column 13 of ..\\scss\\_mobile-styles.scss: \a     \2577 \a 167 \2502              @extend %sharedPanelTraits;\d\a     \2502              ^^^^^^^^^^^^^^^^^^^^^^^^^^\a     \2575 \aYou may not @extend selectors across media queries.\a    \2577 \a 10 \2502      %sharedPanelTraits {\d\a    \2502      ^^^^^^^^^^^^^^^^^^^\a    \2575 \a   ..\\scss\\services-styles.scss 10:5  root stylesheet";
+@-webkit-keyframes backgroundAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 51%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
+@-moz-keyframes backgroundAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 51%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@-o-keyframes backgroundAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 51%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes backgroundAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 51%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.navbar a:hover {
+  background-color: rgba(0, 32, 139, 0.479);
+}
+.navbar .subnav {
+  float: left;
+  overflow: hidden;
+}
+.navbar .subnav .subnavbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+.navbar .subnav:hover .subnavbtn {
+  background-color: rgba(0, 32, 139, 0.479);
+}
+.navbar .subnav-content {
+  display: none;
+  position: absolute;
+  left: 0;
+  background-color: rgba(0, 32, 139, 0.479);
+  width: 100%;
+  z-index: 1;
+}
+.navbar .subnav-content a {
+  float: left;
+  color: white;
+  text-decoration: none;
+}
+.navbar .subnav-content a:hover {
+  background-color: #eee;
+  color: black;
+}
+.navbar .subnav:hover .subnav-content {
+  display: block;
+}
+
+body {
+  font-family: helvetica, sans-serif;
+  margin: 0 auto;
+  background: linear-gradient(267deg, #374e4c, #1c152b);
+  background-size: 400% 400%;
+  background-size: cover;
+  -webkit-animation: backgroundAnimation 16s ease infinite;
+  -moz-animation: backgroundAnimation 16s ease infinite;
+  -o-animation: backgroundAnimation 16s ease infinite;
+  animation: backgroundAnimation 16s ease infinite;
+}
+
+.linear-effect {
+  text-align: center;
+  background: linear-gradient(-45deg, #7afff8 30%, #ffffff 59%, #ffffff 60%, #7afff8 80%);
+  background-size: 200% auto;
+  color: #333;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 4s linear infinite;
+}
+@keyframes shine {
+  to {
+    background-position: 200% center;
+  }
+}
+
+.plxFooterPanel {
+  background-image: url("..\\images\\transparent-panel3.png");
+  border: 4px solid black;
+  box-shadow: 5px 10px 18px #888888;
+  height: 200px;
+  margin: 0 auto;
+  margin-top: 5%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 5;
+  /* .footer {
+  	position: fixed;
+  	bottom: 0px;
+  	left: 0px;
+  	height: 80px;
+  	width: 100%;
+  	background-color: black;
+  	overflow-x: hidden;
+  	padding-top: 0px;
+  	opacity: 0.5;
+  	color: white;
+  }
+
+  h2 {
+  	text-align: center; 
+  } */
+}
+
+p {
+  color: #aaaaaa;
+}
+
+.plxPanel1 .plxPanel2 .panel1, .plxPanel1 .plxPanel2 .panel2,
+.plxPanel1 .plxPanel2 .panel3, .plxPanel1 .plxPanel2 .panel4,
+.plxPanel1 .plxPanel2 .panel5, .plxPanel1 .plxPanel2 .panel6,
+.plxPanel1 .plxPanel2 .panel7, .plxPanel1 .plxPanel2 .panel8 {
+  background-image: url("..\\images\\transparent-panel.png");
+  border: 2px solid black;
+}
+.plxPanel1 .plxPanel2 {
+  /* The image used */
+  background-image: url("..\\images\\1362.jpg");
+  border: 4px solid black;
+  box-shadow: 5px 10px 18px #888888;
+  height: 1810px;
+  width: 50%;
+  margin: 0 auto;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 5;
+}
+.plxPanel1 .plxPanel2 div {
+  height: 200px;
+  background-size: cover;
+  position: relative;
+  margin-top: 10%;
+  border-radius: 12px;
+  max-width: 800px;
+  margin: 2% auto;
+}
+.plxPanel1 .plxPanel2 .price {
+  float: right;
+}
+.plxPanel1 .plxPanel2 p {
+  color: white;
+  background: black;
+  background: linear-gradient(bottom, black, rgba(0, 0, 0, 0.4));
+  background: -webkit-linear-gradient(bottom, black, rgba(0, 0, 0, 0.4));
+  background: -moz-linear-gradient(bottom, black, rgba(0, 0, 0, 0.4));
+  padding: 10px;
+  line-height: 28px;
+  text-align: justify;
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+  height: 30px;
+  transition: height 0.5s;
+  -webkit-transition: height 0.5s;
+  -moz-transition: height 0.5s;
+}
+.plxPanel1 .plxPanel2 small {
+  opacity: 0;
+}
+.plxPanel1 .plxPanel2 .show-description p {
+  height: 150px;
+}
+.plxPanel1 .plxPanel2 .show-description small {
+  opacity: 1;
+}
+
+/*# sourceMappingURL=current-build-services.css.map */
