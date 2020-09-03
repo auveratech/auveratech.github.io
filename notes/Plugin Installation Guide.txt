@@ -1,0 +1,1 @@
+https://github.com/stowball/jQuery-rwdImageMaps/blob/master/jquery.rwdImageMaps.min.js

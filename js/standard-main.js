@@ -1,4 +1,8 @@
-const text = document.querySelector('.companyNameSmall');
+
+//ImageMap('img[usemap]');
+
+
+/* const text = document.querySelector('.companyNameSmall');
 const strText = text.textContent;
 const splitText = strText.split("");
 text.textContent = "";
@@ -24,4 +28,4 @@ function onTick() {
 function complete() {
     clearInterval(timer);
     timer = null;
-}
+} */
