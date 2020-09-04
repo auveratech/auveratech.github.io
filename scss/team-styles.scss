@@ -5,6 +5,12 @@
 
     %openPosition {
         background-image: url("..\\images\\unnamed.png");
+        
+    }
+
+    %sharedProperties {
+        border: 2px solid black;
+        box-shadow: 0px 0px 18px #00b7ff;
     }
 
     div {
@@ -19,18 +25,17 @@
 
     .panel1 {
         background-image: url("..\\images\\avowner.jpg");
-        border: 2px solid black;
-        box-shadow: 5px 10px 18px #888888;
+        @extend %sharedProperties;
     }
 
     .panel2 {
         background-image: url("../images/asde1.png");
-        border: 2px solid black;
-        box-shadow: 5px 10px 18px #888888; 
+        @extend %sharedProperties;
     }
     
     .panel3 {
         @extend %openPosition;
+        @extend %sharedProperties;
     }
 
     .price {
